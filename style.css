@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 80%;
+    font-family: Rubik;
+}
+
+.tracker{
+    height:100vh;
+    width:100%;
+    position: relative;
+}
+
+
+.tracker__form{
+    height:220px;
+    width:100%;
+    background-image: url("./images/pattern-bg.png");
+    background-size: cover;
+    
+}
+
+
+.tracker__form .container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 2rem;
+}
+
+.tracker__form .container h1{
+    color:#fff;
+    padding-bottom: 1.4rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+form input , form button {
+    border:none;
+    outline:none;
+    /* height:100%; */
+    padding:1.2rem 
+}
+
+
+
+.form__group{
+     width:470px;
+     border-radius: 10px;
+     overflow: hidden;
+     display: flex;
+}
+
+form input{
+    flex:1;
+    font-size: 18px;
+}
+
+form button{
+    background:hsl(0, 0%, 17%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.tracker__details{
+        position: absolute;
+      
+         width:100%;
+      top:150px;
+      z-index: 10;
+
+      width:80%;
+      margin:auto;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      background:#fff;
+      padding:1rem 1rem 3rem 1rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px 0 rgba(0,0,0,0.13) , 0 6px 4px 0 rgba(0,0,0,0.17);
+      left:135px;
+}
+
+  .tracker__details .container{
+      width:80%;
+      margin:auto;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      background:#fff;
+      padding:1rem 1rem 3rem 1rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px 0 rgba(0,0,0,0.13) , 0 6px 4px 0 rgba(0,0,0,0.17);
+  }
+
+ .ip{
+     padding:1.3rem 2rem;
+
+     border-right: 1px solid rgba(0,0,0,0.17);
+ }   
+
+ .ip:last-of-type{
+     border: none;
+ }
+
+  .tracker__details p{
+      color:hsl(0, 0%, 59%);
+      margin-bottom: 15px;   
+      font-weight: 500; 
+  }
+
+
+  .tracker__details h4{
+     font-size: 25px;
+     font-weight: 500;   
+  }
+
+
+  #tracker__map{
+      height:64vh;
+       width:100%;
+       z-index: 1;
+  }

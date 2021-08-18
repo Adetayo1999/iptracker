@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <title>Document</title>
+</head>
+<body>
+    <div class="tracker">    
+      <div class="tracker__form">
+          
+        <div class="container">
+            <h1>
+              IP Address Tracker
+            </h1>
+
+            <form action="" id="mapform">
+              <div class="form__group">
+              <input type="text" placeholder="Search for any IP address or domain" id="inputedAddress">
+              <button type="submit">
+                  <img src="images/icon-arrow.svg" alt="">
+              </button>
+              </div>
+            </form>
+
+        </div>
+
+
+      </div>
+      <div class="tracker__details">
+        <!-- <div class="container"> -->
+          <div class="ip">
+            <p>IP ADDRESS</p>
+            <h4 id="ipaddress">192.212.174.101</h4>
+       </div>
+
+       <div class="ip">
+         <p>LOCATION</p>
+         <h4 id="locale">Brooklyn, NY 10001</h4>
+       </div>
+
+       <div class="ip">
+         <p>TIMEZONE</p>
+            <h4>UTC <span id="zone">-5:00</span></h4>
+       </div>
+        <div class="ip">
+         <p>ISP</p>
+            <h4 id="isp">SpaceX Starlink</h4>
+        </div>
+        <!-- </div>  -->
+      
+      </div>
+         <div id="tracker__map">
+
+         </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
