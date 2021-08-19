@@ -92,17 +92,7 @@ form button{
       left:135px;
 }
 
-  .tracker__details .container{
-      width:80%;
-      margin:auto;
-      display: flex;
-      justify-content: space-between;
-      /* align-items: center; */
-      background:#fff;
-      padding:1rem 1rem 3rem 1rem;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px 0 rgba(0,0,0,0.13) , 0 6px 4px 0 rgba(0,0,0,0.17);
-  }
+
 
  .ip{
      padding:1.3rem 2rem;
@@ -131,4 +121,43 @@ form button{
       height:64vh;
        width:100%;
        z-index: 1;
+  }
+
+
+
+
+  @media(max-width:700px){
+      html{
+          font-size: 62.5%;
+      }
+
+      .form__group{
+          width:320px;
+      }
+ 
+      .tracker__details{
+          flex-direction: column;
+          justify-content: center;
+         left:60px;
+      top:130px;
+        padding: 0.8rem;
+      }
+
+      .tracker__details .ip{
+          border:none;
+     padding:0.7rem 2rem;
+
+      }
+      .tracker__details h4{
+        font-size: 20px;
+     }
+     
+.tracker__form .container h1{
+    font-size: 20px;
+}
+
+form input{
+    flex:1;
+    font-size: 14px;
+}
   }

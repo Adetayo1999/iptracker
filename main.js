@@ -9,9 +9,7 @@ const mapform = document.getElementById("mapform");
 
     
 
-        let mymap = L.map('tracker__map')
-        
-        
+        let mymap = L.map('tracker__map')        
         mymap.setView([34.041915, -118.09462], 13);
 
         var marker = L.marker([34.041915, -118.09462]).addTo(mymap);
